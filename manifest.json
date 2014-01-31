@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "epoche-utils",
+  "description": "This extension helps with convert epoch time to string and vice versa",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+ ]
+}

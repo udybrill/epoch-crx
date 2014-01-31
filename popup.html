@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    </head>
+  <body>
+   <table class="tool">
+<tbody><tr>
+<td>Mon</td><td>Day</td><td>Yr</td><td>&nbsp;</td><td>Hr</td><td>Min</td><td colspan="2">Sec </td></tr>
+<tr>
+<td><input class="dateform" type="text" id="hcinput" size="2" maxlength="2" value="1" name="mm">&nbsp;/&nbsp;</td>
+<td><input class="dateform" type="text" size="2" maxlength="2" value="1" name="dd">&nbsp;/&nbsp;</td>
+<td><input class="dateform year" type="text" size="4" maxlength="4" value="2012" name="yyyy"></td> <td>&nbsp;</td>
+<td><input class="dateform" type="text" size="2" maxlength="2" value="0" name="hh">&nbsp;:&nbsp;</td><td><input class="dateform" type="text" size="2" maxlength="2" value="0" name="mn">&nbsp;:&nbsp;</td>
+<td><input class="dateform" type="text" size="2" maxlength="2" value="0" name="ss"> <select name="tz"><option value="1" selected="">GMT</option><option value="2">Local time</option></select>&nbsp;&nbsp;</td><td><input type="submit" class="button" title="Human date to Epoch" value="Human date to Timestamp">&nbsp;<kbd class="light" title="keyboard shortcut">h</kbd></td>
+</tr></tbody></table>  </body>
+</html>
+
