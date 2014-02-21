@@ -7,7 +7,10 @@
         min-width: 357px;
         overflow-x: hidden;
       }
-
+      button {
+        width: 100%;
+        height: 100%;
+      }
       img {
         margin: 5px;
         border: 2px solid black;
@@ -21,10 +24,10 @@
   <body>
     <table class="tool">
       <tr>
-        <td>Yr</td><td>Mon</td><td>Day</td><td>Hr</td><td>Min</td><td>Sec</td><td>Tz</td><td>Epoch</td>
+        <td>Yr</td><td>Mon</td><td>Day</td><td>Hr</td><td>Min</td><td>Sec</td><td>Tz</td><td></td><td></td><td>Epoch</td>
       </tr>
       <tr>
-        <td><input class="dateform" type="text" size="2" maxlength="2" id="yr"></td>
+        <td><input class="dateform" type="text" size="2" maxlength="4" id="yr"></td>
         <td><input class="dateform" type="text" size="2" maxlength="2" id="mon"></td>
         <td><input class="dateform" type="text" size="2" maxlength="2" id="day"></td>
         <td><input class="dateform" type="text" size="2" maxlength="2" id="hr"></td>
@@ -57,9 +60,8 @@
             <option value="+11">+11</option>
           </select>
         </td>
-
-        <td><button></button></td>
-        <td><button></button></td>
+        <td><button id="toEpochBtn" onclick="toEpoch()">=></button></td>
+        <td><button id="fromEpochBtn" onclick="fromEpoch()"><=</button></td>
         <td><input class="dateform" type="text" size="14" maxlength="14" id="epoch"></td>
       </tr>
     </table>
